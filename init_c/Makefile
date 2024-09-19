@@ -4,7 +4,7 @@ LDFLAGS =
 OBJ = main.o afficher.o
 
 afficher: $(OBJ)
-	$(CC) $(OBJ) $(LDFLAGS) -o afficher
+	$(CC) $(OBJ) $(CFLAGS) -o afficher
 
 afficher.o: afficher.c afficher.h
 main.o: main.c afficher.h
