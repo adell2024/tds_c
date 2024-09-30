@@ -60,7 +60,7 @@ int read_matrix_from_file(const char *filename, struct matrix *mat)
     {
         for (int j = 0; j < mat->cols; j++)
         {
-            fscanf(file, "%d", &mat->m[i][j]);
+            fscanf(flot, "%d", &mat->m[i][j]);
         }
     }
 
