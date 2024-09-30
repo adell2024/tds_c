@@ -67,3 +67,5 @@ int read_matrix_from_file(const char *filename, struct matrix *mat)
     fclose(flot);
     return 1;
 }
+
+// Fonction pour écrire la matrice dans un fichier
