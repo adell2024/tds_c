@@ -42,15 +42,15 @@ void free_matrix(struct matrix *mat)
 // Fonction pour lire la matrice à partir d'un fichier
 int read_matrix_from_file(const char *filename, struct matrix *mat)
 {
-    FILE *file = fopen(filename, "r");
-    if (!file)
+    FILE *flot = fopen(filename, "r");
+    if (!flot)
     {
         printf("Impossible d'ouvrir le fichier %s\n", filename);
         return 0;
     }
 
     // Lire les dimensions de la matrice
-    fscanf(file, "%d %d", &mat->lines, &mat->cols);
+    fscanf(flot, "%d %d", &mat->lines, &mat->cols);
 
     // Initialiser la matrice avec les dimensions lues
     init_matrix(mat, mat->lines, mat->cols);
@@ -64,6 +64,6 @@ int read_matrix_from_file(const char *filename, struct matrix *mat)
         }
     }
 
-    fclose(file);
+    fclose(flot);
     return 1;
 }
