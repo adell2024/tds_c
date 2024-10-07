@@ -1,3 +1,5 @@
+![compile](https://github.com/user-attachments/assets/cdc72021-62f7-46e4-9be9-049edfe51f29)
+
 $ gcc ex1.c -o ex1
 
 $ file ex1 
