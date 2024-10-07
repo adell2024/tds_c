@@ -1,10 +1,10 @@
-gcc ex1.c -o ex1
+$ gcc ex1.c -o ex1
 
-file ex1
+$ file ex1 
 
 ex1: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=7f9897fc5a65bed5584312629a6c2de58f7effb8, for GNU/Linux 3.2.0, not stripped
 
-readelf -h ex1
+$ readelf -h ex1
 
 ELF Header:
   Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00
@@ -45,6 +45,6 @@ ELF Header:
   
   Section header string table index: 30
 
-objdump -d ex1  # Disassemble the executable sections
+$ objdump -d ex1  # Disassemble the executable sections
 
-objdump -h ex1  # Display the contents of the section headers
+$ objdump -h ex1  # Display the contents of the section headers
