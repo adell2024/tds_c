@@ -11,4 +11,6 @@
 
 ### prosposer une macrofonction STACK_PRINT2(ident) en tenant compte de la remarque suivante: 
 
->> Pour respecter le principe de fonctionnement d'une pile, il faudrait une approche où on dépile les éléments un à un, les affichant au passage. Toutefois, cela vide la pile. Si vous voulez afficher sans altérer l'état de la pile, il faudrait utiliser une copie temporaire.  
+>> Pour respecter le principe de fonctionnement d'une pile (LIFO – Last In, First Out), il serait nécessaire de dépiler les éléments un à un, en les affichant au fur et à mesure. Cependant, cette approche videra la pile, car chaque élément est retiré.
+>> Si vous souhaitez afficher les éléments sans modifier l'état de la pile, une solution consiste à créer une copie temporaire de la pile. Vous pouvez alors dépiler les éléments de la copie, les afficher, tout en
+>> conservant l'intégrité de la pile originale.  
