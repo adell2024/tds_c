@@ -6,6 +6,7 @@
     printf("- Top of stack « " #stack " » : %d\n", STACK_TOP(stack)) 
 
 STACK_DEFTYPE(int, stack, 1024); 
+
 int main(void)
 {
     stack stack;
@@ -30,5 +31,7 @@ int main(void)
         PRINT_TOP(temp_stack);
         PRINT_TOP(stack);
     }
+
+    STACK_PRINT(temp_stack);
     return EXIT_SUCCESS;
 }
