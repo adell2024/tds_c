@@ -1,6 +1,6 @@
 ### compilateur > compilation  : gcc app.c -o prog
 
-### préprocesseur > préprocessing (prétraitement) : gcc -E app.c > app.c.E
+### préprocesseur > préprocessing (prétraitement) : gcc -E app.c app.c > app.c.E
 >>> consultez le contenu de app.c.E
 
 ### compléter la définition de la macro-fonction :
